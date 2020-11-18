@@ -1,0 +1,22 @@
+{
+  "name": "huddle-landing-page-with-curved-sections-master",
+  "version": "1.0.0",
+  "description": "![Header/intro section for the Huddle landing page with curved sections](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+ 		"watch-style": "sass --watch style.scss style.css",
+		"watch-js": "tsc --watch script.ts",
+		"build": "concurrently \"npm run watch-style\" \"npm run watch-js\""
+ },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdevp/huddle-landing-page-with-curved-sections-master.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdevp/huddle-landing-page-with-curved-sections-master/issues"
+  },
+  "homepage": "https://github.com/cdevp/huddle-landing-page-with-curved-sections-master#readme"
+}
