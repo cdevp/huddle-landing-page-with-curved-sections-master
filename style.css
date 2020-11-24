@@ -744,6 +744,7 @@ img {
     content: "";
   }
   body main {
+    background-color: white;
     width: 112.5rem;
   }
   body #title-box {
