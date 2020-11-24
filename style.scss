@@ -58,17 +58,19 @@ img {
 
 @media (min-width: 1126px) {
     body {
-        background-color: $c-pale-blue;
         display: grid;
         grid-template-columns: minmax(0, 1fr) minmax(0, 144rem) minmax(0, 1fr);
         grid-template-rows: 1fr;
+        gap: 0px;
 
         #lb {
             display: grid;
+            gap: 0px;
             grid-column: 1;
             grid-row: 1;
             grid-template-columns: 1fr;
             grid-template-rows: 210.3rem 71.2rem 82.4rem 63.9rem 61.82rem 1fr;
+
 
             .box:nth-child(2n + 1) {
                 background-color: white;
@@ -86,6 +88,7 @@ img {
 
         #rb {
             display: grid;
+            gap: 0px;
             grid-column: 3;
             grid-row: 1;
             grid-template-columns: 1fr;
@@ -104,7 +107,6 @@ img {
             }
         }
         #content {
-            background-color: $c-dark-cyan;
             grid-column: 2;
             grid-row: 1;
         }
@@ -150,6 +152,11 @@ img {
                     border: 1px solid $c-light-pink;
                     color: $c-light-pink;
                 }
+
+                #free-button:focus {
+                    border: 1px solid $c-light-pink;
+                    color: $c-light-pink;
+                }
             }
         }
 
@@ -163,7 +170,9 @@ img {
         }
 
         main {
-            background-color: white;
+            border-bottom-color: $c-dark-cyan;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
             width: 144rem;
         }
 
@@ -648,6 +657,7 @@ img {
                             height: 4.6rem;
                             line-height: 1.6rem;
                             margin-right: 4rem;
+                            outline: none;
                             padding-left: 2rem;
                             width: 30.2rem;                            
                         }    
@@ -753,7 +763,6 @@ img {
     }
 
     body {
-        background-color: $c-pale-blue;
         display: grid;
         grid-template-columns: minmax(0, 1fr) minmax(0, 112.5rem) minmax(0, 1fr);
         grid-template-rows: 1fr;
@@ -861,7 +870,6 @@ img {
         }
 
         main {
-            background-color: white;
             width: 112.5rem;
         }
 
@@ -1359,6 +1367,7 @@ img {
                             font-size: 3rem;
                             height: 14.00rem;
                             margin-bottom: 4.8rem;
+                            outline: none;
                             padding-left: 2rem;
                             width: 95.7rem;
                         }
