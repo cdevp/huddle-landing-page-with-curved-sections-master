@@ -54,8 +54,9 @@ img {
     gap: 0px;
     grid-column: 1;
     grid-row: 1;
-    grid-template-columns: 1fr;
     grid-template-rows: 210.3rem 71.2rem 82.4rem 63.9rem 61.82rem 1fr;
+    left: 1px;
+    position: relative;
   }
   body #lb .box:nth-child(2n+1) {
     background-color: white;
@@ -73,6 +74,8 @@ img {
     grid-row: 1;
     grid-template-columns: 1fr;
     grid-template-rows: 200.6rem 69.6rem 83.1rem 60.8rem 71.55rem 1fr;
+    right: 1px;
+    position: relative;
   }
   body #rb .box:nth-child(2n+1) {
     background-color: white;
@@ -439,7 +442,7 @@ img {
     background-color: #00252e;
     display: flex;
     flex-direction: row;
-    height: 56.17rem;
+    height: 56.163rem;
     justify-content: center;
     position: relative;
     width: 100%;
@@ -603,17 +606,24 @@ img {
     background-color: #ff8fd8;
     border-color: #ff8fd8;
   }
+  body #footer .attribution {
+    bottom: 0%;
+    color: #f5faff;
+    font-size: 1.4rem;
+    position: absolute;
+    text-align: center;
+  }
   body #footer::before {
     background-image: url("images/bg-footer-top-desktop.svg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
+    bottom: 99.9%;
     content: "";
     display: flex;
     flex-direction: row;
-    position: absolute;
     height: 100%;
-    bottom: 100%;
+    position: absolute;
     width: 100%;
     z-index: 2;
   }
@@ -655,14 +665,16 @@ img {
   body {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 112.5rem) minmax(0, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: 1394.7rem 1fr;
   }
   body #lb {
     display: grid;
     grid-column: 1;
     grid-row: 1;
     grid-template-columns: 1fr;
-    grid-template-rows: 384.3rem 191.8rem 215rem 192.4rem 165.4rem 1fr;
+    grid-template-rows: 384.3rem 191.8rem 215rem 192.4rem 165.5rem 1fr;
+    left: 1px;
+    position: relative;
   }
   body #lb .box:nth-child(2n+1) {
     background-color: white;
@@ -678,7 +690,9 @@ img {
     grid-column: 3;
     grid-row: 1;
     grid-template-columns: 1fr;
-    grid-template-rows: 371.7rem 212.9rem 223.6rem 194.4rem 140.18rem 1fr;
+    grid-template-rows: 371.7rem 212.9rem 223.6rem 194.4rem 140.75rem 1fr;
+    right: 1px;
+    position: relative;
   }
   body #rb .box:nth-child(2n+1) {
     background-color: white;
@@ -690,7 +704,6 @@ img {
     background-color: #00252e;
   }
   body #content {
-    background-color: #00252e;
     grid-column: 2;
     grid-row: 1;
   }
@@ -744,7 +757,9 @@ img {
     content: "";
   }
   body main {
-    background-color: white;
+    border-bottom-color: #00252e;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
     width: 112.5rem;
   }
   body #title-box {
@@ -1034,7 +1049,6 @@ img {
     align-items: flex-end;
     background-color: #00252e;
     display: flex;
-    flex-direction: row;
     height: 235.8rem;
     justify-content: center;
     position: relative;
@@ -1045,6 +1059,7 @@ img {
     display: flex;
     flex-direction: column;
     height: 217.8rem;
+    grid-row: 1;
     margin-left: 1.2rem;
     position: relative;
   }
@@ -1208,19 +1223,34 @@ img {
   body #footer #footer-content #footer-newsletter #subscribe-form button:hover {
     background-color: #ff8fd8;
   }
+  body #footer .attribution {
+    bottom: 0%;
+    color: #f5faff;
+    font-size: 4rem;
+    position: absolute;
+    text-align: center;
+  }
   body #footer::before {
     background-image: url("images/bg-footer-top-mobile.svg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
+    bottom: 99.9%;
     content: "";
     display: flex;
     flex-direction: row;
-    position: absolute;
     height: 100%;
-    bottom: 100%;
+    position: absolute;
     width: 100%;
-    z-index: 2;
+    z-index: 20;
+  }
+
+  #gap {
+    background-color: #00252e;
+    grid-column: 1/span 3;
+    grid-row: 2;
+    position: relative;
+    bottom: 1rem;
   }
 }
 @media (max-width: 1075px) {
