@@ -1,12 +1,10 @@
-function $(eleId: string): HTMLElement {
+function $(eleId) {
     return document.getElementById(eleId);
 }
-
-let re= /\S+@\S+.\S/;
-
-function validateEmail():void {
-    let subInp = <HTMLInputElement>$('subscribe-input');
-    const result = subInp.value.match(re);
+var re = /\S+@\S+.\S/;
+function validateEmail() {
+    var subInp = $('subscribe-input');
+    var result = subInp.value.match(re);
     console.log(result);
     if (result !== null) {
         subInp.value = '';
@@ -17,14 +15,11 @@ function validateEmail():void {
         subInp.focus();
     }
 }
-
-
-$('subscribe-button').addEventListener('click', (e) => {
+$('subscribe-button').addEventListener('click', function (e) {
     e.preventDefault();
     validateEmail();
-})
-
-$('subscribe-form').addEventListener('submit', (e) => {
+});
+$('subscribe-form').addEventListener('submit', function (e) {
     e.preventDefault();
     validateEmail();
-})
+});
