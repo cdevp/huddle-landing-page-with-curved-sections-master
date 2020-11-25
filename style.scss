@@ -774,7 +774,7 @@ img {
 
     body {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(0, 112.5rem) minmax(0, 1fr);
+        grid-template-columns: 0 100% 0;
         grid-template-rows: 1394.7rem 1fr;
 
         #lb {
@@ -884,7 +884,7 @@ img {
             border-bottom-color: $c-dark-cyan;
             border-bottom-style: solid;
             border-bottom-width: 1px;
-            width: 112.5rem;
+            width: 100%;
         }
 
         #title-box {
@@ -1443,7 +1443,7 @@ img {
             flex-direction: row;
             height: 100%;
             position: absolute;
-            width: 101%;
+            width: 100%;
             z-index: 20;
         }
     }
