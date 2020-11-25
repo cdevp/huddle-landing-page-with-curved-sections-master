@@ -666,6 +666,7 @@ img {
     display: grid;
     grid-template-columns: 0 100% 0;
     grid-template-rows: 1394.7rem 1fr;
+    min-width: 375px;
   }
   body #lb {
     display: grid;
