@@ -433,7 +433,7 @@ img {
     margin-top: 4.48rem;
     text-align: center;
     width: 40rem;
-    z-index: 10;
+    z-index: 30;
   }
   body #build-community #community-content #community-button:hover {
     background-color: #ff8fd8;
@@ -932,7 +932,7 @@ img {
     position: absolute;
     height: 100%;
     bottom: 100%;
-    width: 112.5rem;
+    width: 100%;
     z-index: 2;
   }
   body #grow-together::after {
@@ -946,7 +946,7 @@ img {
     position: absolute;
     height: 100%;
     top: 100%;
-    width: 112.5rem;
+    width: 100%;
     z-index: 2;
   }
   body #flowing-conversations {
@@ -992,7 +992,7 @@ img {
     position: absolute;
     height: 100%;
     bottom: 100%;
-    width: 112.5rem;
+    width: 100%;
     z-index: 2;
   }
   body #your-users::after {
@@ -1006,7 +1006,7 @@ img {
     position: absolute;
     height: 100%;
     top: 100%;
-    width: 112.5rem;
+    width: 100%;
     z-index: 2;
   }
   body #build-community {
@@ -1038,7 +1038,7 @@ img {
     padding-top: 0.3rem;
     text-align: center;
     width: 60rem;
-    z-index: 10;
+    z-index: 30;
   }
   body #build-community #community-content #community-button:hover {
     background-color: #ff8fd8;
@@ -1186,7 +1186,6 @@ img {
     cursor: pointer;
     font-size: 3rem;
     height: 14rem;
-    margin-bottom: 4.8rem;
     outline: none;
     padding-left: 2rem;
     width: 95.7rem;
@@ -1195,13 +1194,15 @@ img {
     border-color: #ff4242;
   }
   body #footer #footer-content #footer-newsletter #subscribe-form #validation-error {
+    align-self: flex-start;
     color: #ff4242;
-    display: none;
+    display: flex;
     left: 0rem;
     font-size: 2rem;
     font-weight: 600;
-    position: absolute;
-    top: 15rem;
+    height: 3.8rem;
+    padding-top: 1rem;
+    position: relative;
   }
   body #footer #footer-content #footer-newsletter #subscribe-form button {
     all: unset;
