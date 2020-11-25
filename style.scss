@@ -782,8 +782,8 @@ img {
             grid-column: 1;
             grid-row: 1;
             grid-template-columns: 1fr;
-            grid-template-rows: 384.3rem 191.8rem 215.0rem 192.4rem 165.5rem 1fr;
-            left: 1px;
+            grid-template-rows: 384.3rem 191.8rem 215.0rem 192.4rem 165.58rem 1fr;
+            left: 0.5rem;
             position: relative;
 
             .box:nth-child(2n + 1) {
@@ -805,8 +805,8 @@ img {
             grid-column: 3;
             grid-row: 1;
             grid-template-columns: 1fr;
-            grid-template-rows: 371.7rem 212.9rem 223.6rem 194.4rem 140.75rem 1fr;
-            right: 1px;
+            grid-template-rows: 371.7rem 212.9rem 223.6rem 194.4rem 140.95rem 1fr;
+            right: 0.5rem;
             position: relative;
 
             .box:nth-child(2n + 1) {
