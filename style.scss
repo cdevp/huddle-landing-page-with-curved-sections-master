@@ -783,7 +783,6 @@ img {
             grid-row: 1;
             grid-template-columns: 1fr;
             grid-template-rows: 384.3rem 191.8rem 215.0rem 192.4rem 165.58rem 1fr;
-            left: 0.5rem;
             position: relative;
 
             .box:nth-child(2n + 1) {
@@ -806,7 +805,6 @@ img {
             grid-row: 1;
             grid-template-columns: 1fr;
             grid-template-rows: 371.7rem 212.9rem 223.6rem 194.4rem 140.95rem 1fr;
-            right: 0.5rem;
             position: relative;
 
             .box:nth-child(2n + 1) {
@@ -1445,7 +1443,7 @@ img {
             flex-direction: row;
             height: 100%;
             position: absolute;
-            width: 100%;
+            width: 113.5rem;
             z-index: 20;
         }
     }
